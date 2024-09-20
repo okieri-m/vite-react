@@ -1,0 +1,38 @@
+.textContainer {
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+    color: #fff;
+  }
+  
+  .text {
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color: #969FAD;
+  }
+
+  .yourResult__text {
+    font-size: 0.9375rem;
+    text-align: center;
+    display: block;
+    color: #FC7614;
+    padding: 20px 0;
+    background: #262E38;
+    border-radius: 50px;
+  }
+  @media (max-width: 550px) {
+    .yourResult__text {
+      padding: 10px;
+      max-width: 182px;
+      margin: auto;
+    }
+  }
+  
+  .yourResult__container {
+    margin-bottom: 40px;
+  }

@@ -1,0 +1,21 @@
+.thanksMessage__title {
+    font-size: 1.75rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 550px) {
+    .thanksMessage__title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .thanksMessage__text {
+    color: #969FAD;
+    line-height: 1.5rem;
+  }
+  @media (max-width: 550px) {
+    .thanksMessage__text {
+      font-size: 0.875rem;
+    }
+  }
