@@ -1,6 +1,6 @@
 
 import { Header } from "./Header";
-import { Body } from "./Body";
+import { Container } from "./Container";
 import { Form } from "./Form";
 
 export const FeedBack = () => {
@@ -9,7 +9,7 @@ export const FeedBack = () => {
   return (
     <>
         <Header />
-        <Body />
+        <Container />
         <Form />
     </>
   )

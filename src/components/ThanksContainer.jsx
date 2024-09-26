@@ -1,7 +1,7 @@
 import{ useLocation } from "react-router-dom";
-import "./Body.css"
+import "./ThanksContainer.css"
 
-export const ThanksBody = () => {
+export const ThanksContainer = () => {
 
     const location = useLocation();
     const rating = location.state?.rating ?? 'none';
@@ -12,3 +12,4 @@ export const ThanksBody = () => {
     </div>
   )
 }
+

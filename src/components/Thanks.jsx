@@ -1,6 +1,6 @@
 
 import { ThanksHeader } from "./ThanksHeader.jsx";
-import { ThanksBody } from "./ThanksBody.jsx";
+import { ThanksContainer } from "./ThanksContainer.jsx";
 import { ThanksMessage } from "./ThanksMessage.jsx";
 
 export const Thanks = () => {
@@ -8,7 +8,7 @@ export const Thanks = () => {
   return (
     <>
        <ThanksHeader />
-       <ThanksBody />
+       <ThanksContainer />
        <ThanksMessage />
     </>
   )

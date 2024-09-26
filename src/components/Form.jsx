@@ -12,10 +12,11 @@ export const Form = () => {
    setSelectedRating(rating);
   };
 
-  const handleSubmit = () =>{
+  const handleSubmit = (e) =>{
    if (selectedRating === null){
        alert("Select your feedback");
    } else {
+       e.preventDefault();
        navigate("/thanks", {state: {rating: selectedRating}});
      }
   };
@@ -25,8 +26,8 @@ export const Form = () => {
         <div className="review__numberContainer">
             {[1, 2, 3, 4, 5].map((rating) => (
                 <Fragment key={rating}>
-                    <input type="radio" id={rating} />
-                    <label htmlFor={rating} className={`review__numberItem ${selectedRating === rating ? "is-active" : ""}`} aria-label={`Rating ${rating} out of 5`} aria-pressed={selectedRating === rating} onClick={() => handleRatingClick(rating)} >{rating}</label>
+                    <input type="radio" id={`rating - ${rating}`} onClick={() => handleRatingClick(rating)} name={`rating - ${rating}`} value={`rating - ${rating}`}/>
+                    <label htmlFor={`rating - ${rating}`} className={`review__numberItem ${selectedRating === rating ? "is-active" : ""}`} aria-label={`Rating ${rating} out of 5`} aria-pressed={selectedRating === rating} >{rating}</label>
                 </Fragment>
             ))}
         </div>

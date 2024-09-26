@@ -1,5 +1,5 @@
 import thanksPageIllustration from "./assets/thankspage-img.png";
-import "./Header.css";
+import "./ThanksHeader.css";
 
 export const ThanksHeader = () => {
   return (

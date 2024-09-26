@@ -1,6 +1,6 @@
-import "./Body.css";
+import "./Container.css";
 
-export const Body = () => {
+export const Container = () => {
   return (
     <div className="textContainer">
         <h1 className="title">How did we do?</h1>
