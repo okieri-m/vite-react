@@ -1,5 +1,5 @@
 # 1. Project Overview
-
+[The rating app](https://github.com/user-attachments/assets/a28624ba-0a9d-45ac-bd21-a6a78a220806)
 This is a web page created to obtain numerical reviews from users.
 
 
@@ -22,18 +22,20 @@ This script implements the ability for users to select a rating as feedback on a
 
  ## Feature details
 
- ユーザーが1−５の評価を選択した時、選択されたボタンには動的に is-active のクラスめいが付与され、ハイライトされます。
+When the user selects a rating from 1 to 5, the selected button is dynamically assigned the class name ```is-active``` and highlighted.
+
+
  ```
  <input type="radio" id={`rating - ${rating}`} onClick={() => handleRatingClick(rating)} name={`rating - ${rating}`} value={`rating - ${rating}`}/>
-                    <label htmlFor={`rating - ${rating}`} className={`review__numberItem ${selectedRating === rating ? "is-active" : ""}`} aria-label={`Rating ${rating} out of 5`} aria-pressed={selectedRating === rating} >{rating}</label>
+<label htmlFor={`rating - ${rating}`} className={`review__numberItem ${selectedRating === rating ? "is-active" : ""}`} aria-label={`Rating ${rating} out of 5`} aria-pressed={selectedRating === rating} >{rating}</label>
 
  ```
 
- ユーザーが選択する評価は、reactのフックuseStateで管理されていて、値が更新されるごとに最新の値が保存されます。
+ The rating is managed by React hook  ```useState``` , which stores the latest value each time the rating is updated.
 
- ユーザーが submit を押した後の仕組みは useNavigate で実装されます。useNavigate では、submit が押された後の遷移先のパス(/thanks)と、ユーザーが選択した値(1-5の評価)が保存されます。
+ The functionality after the user clicks the submit button is implemented using the React hook ```useNavigate``` . The navigate hook stores two values: the pass to the next page(/thanks) and the rating chosen by the user.
 
- 例えば、ユーザーが評価3を選択し、submit をクリックすると、評価3が保存され、useNavigate で設定された /thanks へ遷移されます。ユーザーが評価を選択せずにsubmitボタンを押すと、「Select your feedback」のアラートが表示されます。
+ For example, if the user chooses a rating 3 and clicks submit, the rating 3 is stored, and the page navigates to /thanks. If the user clicks the submit button without chosing any rating, an alart will be shown saying "Select your feedback." .
 
  ```
    const handleSubmit = (e) =>{
@@ -46,6 +48,6 @@ This script implements the ability for users to select a rating as feedback on a
   };
 ```
 
- 遷移先のページでは、useLocation hookが使用され、遷移前で受け取った評価の値「３」が引き渡され、UIで「You selected 3 out of 5」が表示されます。
+On the next page (/thanks), useLocation hook is used to retrieved the rating of 3, which is then displayed to the user as "You selected 3 out of 5".
 
  
