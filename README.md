@@ -1,5 +1,6 @@
 # 1. Project Overview
-[The rating app](https://github.com/user-attachments/assets/a28624ba-0a9d-45ac-bd21-a6a78a220806)
+<img src="https://github.com/user-attachments/assets/a28624ba-0a9d-45ac-bd21-a6a78a220806" width="300">
+
 This is a web page created to obtain numerical reviews from users.
 
 
