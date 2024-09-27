@@ -5,7 +5,7 @@ import "./Form.css";
 
 export const Form = () => {
 
-    const [ selectedRating, setSelectedRating ] = useState(null);
+  const [ selectedRating, setSelectedRating ] = useState(null);
   const navigate = useNavigate();
 
   const handleRatingClick = (rating) =>{
