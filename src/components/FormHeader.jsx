@@ -1,5 +1,5 @@
 import starIcon from "./assets/star.png";
-import "./Header.css";
+import "./FormHeader.css";
 
 export const Header = () => {
   return (

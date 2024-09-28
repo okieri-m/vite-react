@@ -1,6 +1,6 @@
 
-import { Header } from "./Header";
-import { Container } from "./Container";
+import { FormHeader } from "./FormHeader";
+import { FormContainer } from "./FormContainer";
 import { Form } from "./Form";
 
 export const FeedBack = () => {
@@ -8,8 +8,8 @@ export const FeedBack = () => {
   
   return (
     <>
-        <Header />
-        <Container />
+        <FormHeader />
+        <FormContainer />
         <Form />
     </>
   )
