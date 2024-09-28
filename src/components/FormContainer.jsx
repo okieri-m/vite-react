@@ -1,6 +1,6 @@
 import "./FormContainer.css";
 
-export const Container = () => {
+export const FormContainer = () => {
   return (
     <div className="textContainer">
         <h1 className="title">How did we do?</h1>
